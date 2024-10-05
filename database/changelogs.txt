@@ -1,5 +1,53 @@
-~ B8 (Work...)
-
+~ B8 (dd25a2e)
++ Added GuiTheme Color
++ Added FreeLook module
++ Added ForwardTrack module
++ Added ClearGlass Mode in NoRender Module
++ Added GodBridge Pre-rotate functionality (from Nextgen) to Scaffold
+* Fixed projectiles GL
++ Added rounded-rect to blackhotbar
+~ Renamed mineblaze(hop/timer) -> intave(hop/timer)
++ Added delay functionality for AutoArmor - PostInventoryCloseDelay option
+* Fixed TickBase being movement-detected by anti-cheats
+* Fixed storageesp wireframe render bug
++ Added Fucker RenderPos status
+* Fixed jumpOnUserInput not working properly
++ Added Discord RPC redirection
+~ Refactored Notifications structure better
+* Fixed verusfly flagging badpacketO
++ Added Clear Block option in NoRender Module
+~ Cleaned up Tower module
+* Fixed tower rotations, vulcan velocity & scaffold disabler
++ Added Show Number option - ScoreboardElement
++ Added FreezeYCamera option to Scaffold
+* Fixed ForwardTrack not displaying positions correctly in Singleplayer
++ Added ItemESP ItemTextTag option
+~ Improved flagcheck (ghostblock & countertickreset)
++ Added blockoverlay depth3d option
+* Fixed gradient shader stuttering (sometimes)
+~ Improved tickbase
++ Added TargetESP Lies, Jello, FDP Mode
++ Added KeepTabList
+* Fixed mlg mode settings displaying incorrectly
+~ Refactored Theme color default
+* Fixed realistic rotations
++ Added blockoverlay modes (box, otherbox, outline)
+* Fixed custom background
++ Added AutoPlay BedWarsHelp option
+* Fixed nametags not rendering correctly
+~ Refactored MainMenu Color view
+~ Improved performance for entities in NoRender
++ Added BedPlates Module
++ Added NameTags Enchant / Indicator Mode
+* Fixed smooth arraylist mode sometimes leaving tiny space between modules
+~ Improved SimulateShortStop option, fixed InventoryMove breaking rotations
+* Fixed start status not changing on production environments
+~ Removed AutoJump option
++ Added more block overlay blocks support
+* Fixed flagcheck ghostblock falses fix
+~ Renamed UseStaticRotation to UseOptimizedPitch
+* Fixed some misalignment in arraylist rect
+~ Completion: pt_br, zh_cn, zh_tw. Translate
 ~ B7 (#25d9fe5)
 * Fixed APIConnecter load image
 * Fixed GUI crashing on resize
