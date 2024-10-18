@@ -1,126 +1,205 @@
-b6 release:
-fix: proper renderutils color reset
-fix: scoreboard rect color reset
-fix: localconfig delete command
-fix: blink antivoid with scaffold
-feat: added fishing rods
-feat: Experimental packet cancel option to Backtrack.
-fix: blink antivoid
-feat: added newpushdown animation
-feat: backtrack desync & add reset to backtrack
-feat: added verusfhop speed mode, improve verusglide fly mode
-refactor: rewrite MLG nofall
-feat: back target styles 
-fix: log4j syntax
-fix: tower rotating even if rotations are off
-feat: modes to tickbase module.
-fix: chat alert - armor element
-feat: atributes blink color - armor element
-feat: armor Alert Repair Reminder Threshold / Alert Durability Threshold
-fix: armor element alignment atributes / cleanup code
-fix: keybindmanager bind names / cleanup code
-feat: macro manager / macro command / macro on binds
-feat: invmove fullMovements/nomoveclicks/noDetectable/rotate mode
-feat: keybind manager ui
-fix: make all visual cheststealer values subjective
-refactor: move jumpstrafe and fix maxverticalspeed
-fix: verusglide fly flags
-feat: scaffold jumpstrafe option
-fix: use infix for safe division
-feat: added blink antivoid & renamed bugup -> antivoid
-fix: save division cast int to float
-fix: safe division for randomclickdelay
-feat: added invutils finditemarray, selfinteract optimization
-feat: update speed HypixelHop
-feat: added the line option to fakelag
-feat: in singleplayer you can only blink via receive mode
-fix: MinEnemyRotDiffToIgnore option
-fix: fix the JumpDirections option in Sprint
-fix: subjective values not being subjective (InventoryManager)
-fix: projectiles sidehit null
-feat: fixed, improved & optimized staff detector
-feat: added velocity pause on explosion
-feat: added antibot capabilities mode
-feat: added blinkautoblock blink ticks
-feat: inventorymove mouse support
-feat: Color Theme client added / I will bring the interface soon
-fix: disabler values / killaura slow down on direction change
-feat: added noslow foodonly & drinkonly & intave consume
-feat: add MinRotationDiffFromEnemyToIgnore to SuperKnockback
-fix: tickbase line option & backtrack isSelected
-feats: NoRotation (Min/Max)HorizontalBodySearch, MinRotationDifference/RotationRecorder module
-fix: black hotbar option not being aligned correctly.
-fix: blinkautoblock sequence
-fix: add missing tower option to scaffold
-fix: Safe division for rotation slow down calculations.
-feat: World Color option ambience
-feat: Ambience dynamic/day/dusk/night mode
-fix: treat Godbridge mode as Godbridge rotation mode
-feat: Make TickBase's visuals customizable
-feat: add NotOnMove option to Tower
-feat: vulcan tower
-feat: hypixel bypasses (nofall, autoblock)
-feat: improved & added more option to customspeed
-feat: tickbase min/max range, changes, only killaura
-feat: InventoryManager 
-b5 release:
-feat: Log4j, CommandComplete, Inventory, MultiverseCore - server crasher
-feat: Made slow rotation starts occur a bit more realistically.
-fix: fireball fly values
-feat: antifireball ticks check
-feat: verus glide & uncp lowhop 
-fix: fixed nullpointer spam
-fix: fixed backtrack chunk & tickbase working with no targets
-feat: Border Classic Notifications and fix commands AddAll, Clip, ConnectCommand
-feat: SnakeGame color and font size
-feat: Made SimulateShortStop perform a bit more realistic sho…
-feat: Chance option to SuperKnockback.
-feat: Config Command - openfolder/create config(bug criando formato errado)/list config/delete config/load config/current
-fix: TimerRange use spot
-feat: A bit of a more realistic speed change for the Relative…
-feat: GuiClicker Module
-feat: notifications classic style
-b4 released:
-feat: Inventory Plus HUD Module (working)
-feat: NoRender Module && remove target command (you can use .target because have module)
-feat: Chams Hand Mode / color options / behind options / textured and possible use legacy mode
-fix: target commands
-feat: RearView Custom Fov/FrameBuffer/ThirdPersonView
-fix: ClientBrandRetriever doest not interrupt with connection
-fix: IRC Commands
-feat: Better Spot randomization
-feat: Item Rotation Animate
-feat: Rear View Element
-feat: Camera View Module
-feat: matrix speed modes ("MatrixHop2", "Matrix6.6.1", "Matrix6.9.2")
-feat: verus speed modes ("OldHop", "Float", "Ground", "YPort", "YPort2")
-feat: Combat Visuals - fakesharp option
-feat: Combat Visuals (KillESP + AttackEffects (Combine Modules))
-feat: Arraylist Fade Color
-feat: Arraylist Top RectMode
-feat: Arraylist Special RectMode
-feat: Arraylist Outline RectMode
-added: HealthWarn Module
-added: Glint Module
-added: FakePlayer Module
-feat: KillESP Mode Sims
-feat: KillESP Mode Zavz
-…selection options, moved all rotation options to rotation-utilizing options and removed ExperimentalLinearCurveRotation option.
-Fixed SlowDownOnDirectionChange.
-Renamed randomization related options from KillAura.
-Added Body point targeting options.
-Removed ExperimentalLinearCurveRotation.
-Moved all Rotations module's options to rotation utils utilizing modules.
-feat: Disabler Mode: BasicDisabler 
-feat: Disabler Node: noRotationDisabler 
-New Base
-Fix Memory Leak
-feat: CrossHair option on HUD Module
-fix check distance to entity for noRotation in killaura
-Feat TickBase Module
-Feat KillESP Module
-Fix KillAura Reach
-Fix KillAura AutoBlock Disable
-Feat: RU translate update 
-Fixed Many Bugs
-Main Menu improvements
+~ B9 (Working...)
+
+~ B8 (dd25a2e)
++ Added GuiTheme Color
++ Added FreeLook module
++ Added ForwardTrack module
++ Added ClearGlass Mode in NoRender Module
++ Added GodBridge Pre-rotate functionality (from Nextgen) to Scaffold
+* Fixed projectiles GL
++ Added rounded-rect to blackhotbar
+~ Renamed mineblaze(hop/timer) -> intave(hop/timer)
++ Added delay functionality for AutoArmor - PostInventoryCloseDelay option
+* Fixed TickBase being movement-detected by anti-cheats
+* Fixed storageesp wireframe render bug
++ Added Fucker RenderPos status
+* Fixed jumpOnUserInput not working properly
++ Added Discord RPC redirection
+~ Refactored Notifications structure better
+* Fixed verusfly flagging badpacketO
++ Added Clear Block option in NoRender Module
+~ Cleaned up Tower module
+* Fixed tower rotations, vulcan velocity & scaffold disabler
++ Added Show Number option - ScoreboardElement
++ Added FreezeYCamera option to Scaffold
+* Fixed ForwardTrack not displaying positions correctly in Singleplayer
++ Added ItemESP ItemTextTag option
+~ Improved flagcheck (ghostblock & countertickreset)
++ Added blockoverlay depth3d option
+* Fixed gradient shader stuttering (sometimes)
+~ Improved tickbase
++ Added TargetESP Lies, Jello, FDP Mode
++ Added KeepTabList
+* Fixed mlg mode settings displaying incorrectly
+~ Refactored Theme color default
+* Fixed realistic rotations
++ Added blockoverlay modes (box, otherbox, outline)
+* Fixed custom background
++ Added AutoPlay BedWarsHelp option
+* Fixed nametags not rendering correctly
+~ Refactored MainMenu Color view
+~ Improved performance for entities in NoRender
++ Added BedPlates Module
++ Added NameTags Enchant / Indicator Mode
+* Fixed smooth arraylist mode sometimes leaving tiny space between modules
+~ Improved SimulateShortStop option, fixed InventoryMove breaking rotations
+* Fixed start status not changing on production environments
+~ Removed AutoJump option
++ Added more block overlay blocks support
+* Fixed flagcheck ghostblock falses fix
+~ Renamed UseStaticRotation to UseOptimizedPitch
+* Fixed some misalignment in arraylist rect
+~ Completion: pt_br, zh_cn, zh_tw. Translate
+~ B7 (#25d9fe5)
+* Fixed APIConnecter load image
+* Fixed GUI crashing on resize
++ Added NameTags Style 3D / 2D
++ Added sneaking manually while using eagle
++ Added fakelag blinkonaction options
++ Added uncphopnew pt.2
++ Added NameTags show armor durability
++ Added lb nextgen ncphop speed & strafe strength
++ Updated staffdetector staffs list
++ Improved nuker (blocks & lightopacity)
++ Moved inventory cleaner > player category
++ Added invmanager maxfishingrod stacks
++ Added ItemESP ItemTextTag option
++ Added ItemESP text mode
++ Added Effects Style FDP/Classic/Default
++ Added NameTags Enchant / Indicator Mode
++ Added KillAura priority (OnLadder, InLiquid, InWeb)
++ Added TargetESP Lies, Jello, FDP Mode
+* Fixed start status not changing on production environments
+* Fixed unformatted names generating the opposites
+* Fixed tickbase spam ticking
+* Fixed issue with maxRenderDistanceSq values
+* Fixed ItemESP small fix
+* Fixed KillAura priority statement
+* Fixed InvMove IntaveMode
+* Renamed mineblaze(hop/timer) -> intave(hop/timer)
+* Slightly improved uncphopnew
+* Changed ItemESP text mode to an option
+~ B6 RELEASE:
+* Fixed proper renderutils color reset
+* Fixed scoreboard rect color reset
+* Fixed localconfig delete command
+* Fixed blink antivoid with scaffold
++ Added fishing rods
++ Added Experimental packet cancel option to Backtrack
+* Fixed blink antivoid
++ Added newpushdown animation
++ Added backtrack desync & add reset to backtrack
++ Added verusfhop speed mode, improve verusglide fly mode
+* Refactored MLG nofall
++ Added back target styles
+* Fixed log4j syntax
+* Fixed tower rotating even if rotations are off
++ Added modes to tickbase module
+* Fixed chat alert - armor element
++ Added atributes blink color - armor element
++ Added armor Alert Repair Reminder Threshold / Alert Durability Threshold
+* Fixed armor element alignment atributes / cleanup code
+* Fixed keybindmanager bind names / cleanup code
++ Added macro manager / macro command / macro on binds
++ Added invmove fullMovements/nomoveclicks/noDetectable/rotate mode
++ Added keybind manager ui
+* Fixed make all visual cheststealer values subjective
+* Refactored move jumpstrafe and fix maxverticalspeed
+* Fixed verusglide fly flags
++ Added scaffold jumpstrafe option
+* Fixed use infix for safe division
++ Added blink antivoid & renamed bugup -> antivoid
+* Fixed save division cast int to float
+* Fixed safe division for randomclickdelay
++ Added invutils finditemarray, selfinteract optimization
++ Updated speed HypixelHop
++ Added the line option to fakelag
++ In singleplayer you can only blink via receive mode
+* Fixed MinEnemyRotDiffToIgnore option
+* Fixed JumpDirections option in Sprint
+* Fixed subjective values not being subjective (InventoryManager)
+* Fixed projectiles sidehit null
++ Fixed, improved & optimized staff detector
++ Added velocity pause on explosion
++ Added antibot capabilities mode
++ Added blinkautoblock blink ticks
++ Added inventorymove mouse support
++ Added Color Theme client / I will bring the interface soon
+* Fixed disabler values / killaura slow down on direction change
++ Added noslow foodonly & drinkonly & intave consume
++ Added MinRotationDiffFromEnemyToIgnore to SuperKnockback
+* Fixed tickbase line option & backtrack isSelected
++ Added NoRotation (Min/Max)HorizontalBodySearch, MinRotationDifference/RotationRecorder module
+* Fixed black hotbar option not being aligned correctly
+* Fixed blinkautoblock sequence
+* Fixed missing tower option to scaffold
+* Fixed Safe division for rotation slow down calculations
++ Added World Color option ambience
++ Added Ambience dynamic/day/dusk/night mode
+* Fixed Godbridge mode as Godbridge rotation mode
++ Made TickBase's visuals customizable
++ Added NotOnMove option to Tower
++ Added vulcan tower
++ Added hypixel bypasses (nofall, autoblock)
++ Improved & added more option to customspeed
++ Added tickbase min/max range, changes, only killaura
++ Added InventoryManager
+~ B5 RELEASE:
++ Added Log4j, CommandComplete, Inventory, MultiverseCore - server crasher
++ Made slow rotation starts occur a bit more realistically
+* Fixed fireball fly values
++ Added antifireball ticks check
++ Added verus glide & uncp lowhop
+* Fixed nullpointer spam
+* Fixed backtrack chunk & tickbase working with no targets
++ Added Border Classic Notifications and fix commands AddAll, Clip, ConnectCommand
++ Added SnakeGame color and font size
++ Made SimulateShortStop perform a bit more realistic
++ Added Chance option to SuperKnockback
++ Added Config Command - openfolder/create config(bug creating wrong format)/list config/delete config/load config/current
+* Fixed TimerRange use spot
++ Added a bit of a more realistic speed change for the Relative...
++ Added GuiClicker Module
++ Added notifications classic style
+~ B4 RELEASE:
++ Added Inventory Plus HUD Module (working)
++ Added NoRender Module && remove target command (you can use .target because have module)
++ Added Chams Hand Mode / color options / behind options / textured and possible use legacy mode
+* Fixed target commands
++ Added RearView Custom Fov/FrameBuffer/ThirdPersonView
+* Fixed ClientBrandRetriever does not interrupt with connection
+* Fixed IRC Commands
++ Added Better Spot randomization
++ Added Item Rotation Animate
++ Added Rear View Element
++ Added Camera View Module
++ Added matrix speed modes ("MatrixHop2", "Matrix6.6.1", "Matrix6.9.2")
++ Added verus speed modes ("OldHop", "Float", "Ground", "YPort", "YPort2")
++ Added Combat Visuals - fakesharp option
++ Added Combat Visuals (KillESP + AttackEffects (Combine Modules))
++ Added Arraylist Fade Color
++ Added Arraylist Top RectMode
++ Added Arraylist Special RectMode
++ Added Arraylist Outline RectMode
++ Added HealthWarn Module
++ Added Glint Module
++ Added FakePlayer Module
++ Added KillESP Mode Sims
++ Added KillESP Mode Zavz
+- Removed ExperimentalLinearCurveRotation option
+* Fixed SlowDownOnDirectionChange
+* Renamed randomization related options from KillAura
++ Added Body point targeting options
+* Moved all Rotations module's options to rotation-utilizing modules
++ Added Disabler Mode: BasicDisabler
++ Added Disabler Node: noRotationDisabler
+* Fixed Memory Leak
++ Added CrossHair option on HUD Module
+* Fixed check distance to entity for noRotation in killaura
++ Added TickBase Module
++ Added KillESP Module
+* Fixed KillAura Reach
+* Fixed KillAura AutoBlock Disable
++ Added RU translate update
+* Fixed Many Bugs
+* Improved Main Menu
